@@ -27,6 +27,7 @@
 #include "MazeSetTrackAction.hpp"
 #include "ParkEntranceRemoveAction.hpp"
 #include "ParkMarketingAction.hpp"
+#include "ParkSetDateAction.hpp"
 #include "ParkSetLoanAction.hpp"
 #include "ParkSetNameAction.hpp"
 #include "ParkSetParameterAction.hpp"
@@ -61,6 +62,7 @@
 #include "TrackPlaceAction.hpp"
 #include "TrackRemoveAction.hpp"
 #include "TrackSetBrakeSpeedAction.hpp"
+#include "WallPlaceAction.hpp"
 #include "WallRemoveAction.hpp"
 #include "WaterLowerAction.hpp"
 #include "WaterRaiseAction.hpp"
@@ -109,6 +111,7 @@ namespace GameActions
         Register<StaffSetCostumeAction>();
         Register<StaffSetPatrolAreaAction>();
         Register<SurfaceSetStyleAction>();
+        Register<WallPlaceAction>();
         Register<WallRemoveAction>();
         Register<SmallSceneryPlaceAction>();
         Register<SmallSceneryRemoveAction>();
@@ -127,5 +130,6 @@ namespace GameActions
         Register<WaterLowerAction>();
         Register<WaterRaiseAction>();
         Register<GuestSetFlagsAction>();
+        Register<ParkSetDateAction>();
     }
 } // namespace GameActions
